@@ -1,0 +1,16 @@
+<input id="p"><input id="a">
+  <button onclick="c()">Ok</button>
+  <p id="r"></p>
+
+<script>
+  c=_=>{
+
+  i=p.value/(a.value*a.value)
+
+   t=i<18.5?"Magreza":
+   i<25?"Normal":
+   i<30?"Sobrepeso":"Obesidade"
+
+      r.innerHTML="IMC:"+i.toFixed(2)+" "+t
+}
+</script>
