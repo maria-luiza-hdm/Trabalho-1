@@ -1,0 +1,19 @@
+<input id="n">
+<button onclick="c()">Tentar</button>
+<p id="r"></p>
+
+<script>
+s=Math.floor(Math.random()*100)+1
+t=0
+
+c=()=>{
+
+t++
+n=Number(n.value)
+
+  if(n>s)r.innerHTML="Muito alto - "+t
+  else if(n<s)r.innerHTML="Muito baixo - "+t
+  else r.innerHTML="Acertou - "+t
+
+}
+</script>
