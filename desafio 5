@@ -1,0 +1,27 @@
+<p id="t">0:0</p>
+
+<button onclick="i()">Iniciar</button>
+<button onclick="p()">Pausar</button>
+<button onclick="r()">Resetar</button>
+
+<script>
+ s=0
+ m=0
+ x=0
+
+ i=()=>x=setInterval(_=>{
+  s++
+  if(s==60){s=0;m++}
+  t.innerHTML=m+":"+s
+}, 1000)
+
+p=()=>clearInterval(x)
+
+r=()=>{
+ clearInteval(x)
+ s=0
+ m=0
+ t.innerHTML="0:0"
+}
+
+</script>
