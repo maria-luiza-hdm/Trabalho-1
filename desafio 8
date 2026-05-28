@@ -1,0 +1,24 @@
+<input id="t">
+<button onclick="c()">Ok</button>
+
+<p id="r1"></p>
+<p id="r2"></p>
+<p id="r3"></p>
+<p id="r4"></p>
+
+<script>
+ c=()=>{
+
+  x=t.value.toLowerCase().replace(/ /g,"")
+
+  r1.innerHTML="caracteres: "+x.length
+  r2.innerHTML="palavras: "+t.value.split("").length
+
+  i=t.value.split("").reverse().join("")
+  r3.innerHTML="invertida: "+i
+
+  r4.innerHTML=
+   x==x.split("").reverse().join("")?"é palíndromo":"não é palíndromo"
+
+}
+</script>
